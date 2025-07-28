@@ -127,7 +127,7 @@ select * from
 
 Using dbt semantic layer addon
 
-![Semantic Layer in GSheets](assets/GSheets.png)
+![Semantic Layer in GSheets](assets/gsheets.png)
 
 ---
 
