@@ -131,6 +131,15 @@ Using dbt semantic layer addon
 
 ---
 
+## Conclusion
+
+It’s important to understand that the **dbt Semantic Layer** is not a physical structure within Snowflake — it’s a metadata layer built on top of your dbt models. As a result, you won’t see it directly in Snowflake's object browser.
+
+However, any updates made to raw tables in Snowflake will automatically propagate through your dbt project the next time you run `dbt run`. Once your dbt models are updated, the Semantic Layer — which sits on top of these models — will reflect the latest data when queried.
+
+This decoupling of logic and storage allows for flexible, up-to-date metric definitions without manual intervention at the query level.
+
+
 ## 🚀 Run the Project Yourself
 
 1. Clone this repo:
